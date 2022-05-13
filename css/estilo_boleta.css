@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+body{
+    mfont-size: 9pt;
+    background-color: #FFFFFF;
+	margin-left:-2;
+	margin-right:-2;
+	margin-top:-2;
+	margin-botton:-2;
+	border-width:0;
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+	border-style:none;
+	width:103%;
+    font-family: "Times New Roman";
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+.principal{
+ width: 680px;
+ max-width: 700px;
+ height: 100%;
+ border: 1px solid #000;
+ border-collapse: collapse;
+ margin: 2px;
+ 
+}
+
+.principal td, .principal th, .principal tr{
+    border: 1px solid #000;
+
+}
+.padding3{
+    padding: 3px;
+}
+
+.secundaria{
+    border: 0px solid #000;
+    border-collapse: collapse;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+.logo{
+    width: 100px;
+    text-align: center;
+    border-right: 0px solid #000;
+}
+.centrado{
+    text-align: center;
+   /* border-left: 0px solid #000;*/
+}
+
+.fuente10{
+    font-size: 10px;
+}
+.fuente11{
+    font-size: 11px;
+}
+.fuente12{
+    font-size: 12px;
+}
+.fuente13{
+    font-size: 13px;
+}
+.fuente14{
+    font-size: 14px;
+}
+.tam60{
+    width: 60px;
+}
+.tam70{
+    width: 70px;
+}
+.tam80{
+    width: 80px;
+}
+.tam90{
+    width: 90px;
+}
+.tam100{
+    width: 100px;
+}
+.tam120{
+    width: 120px;
+}
+.tam130{
+    width: 120px;
+}
+.tam150{
+    width: 150px;
+}
+.tam143{
+    width: 143px;
+}
+.tam240{
+    width: 240px;
+}
+.tam300{
+    width: 300px;
+}
+.tam360{
+    width: 360px;
+}
+
+.alto50{
+    height: 50px;
+}
+.alto60{
+    height: 60px;
+}
+.alto70{
+    height: 70px;
+}
+
+.copia{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.disclamer{
+    font-style: italic;
+    font-size: 11px;
+    width: 660px;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 5px;
+}

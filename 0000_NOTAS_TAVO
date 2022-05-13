@@ -1,0 +1,165 @@
++++++++++++++++++++++++++++++++
+saber permisos de usuario
++++++++++++++++++++++++++++++++
+
+-----------------------------
+obtener usuario actual
+-----------------------------
+$user = getUserName();
+
+-----------------------------
+usuario basico
+-----------------------------
+if(authGetUserLevel($user) <=1){
+
+}
+
+-----------------------------
+verifica autorizacion 
+-----------------------------
+
+checkAuthorised();
+
+
+***********************************
+Pagina: edit_entry.php
+***********************************
+
+----------------------------------
+//linea: 61: orden de los campos
+----------------------------------
+// Fill $edit_entry_field_order with not yet specified entries.
+$entry_fields = array('fecha_reserva', 'name', 'type', 'justificacion','description', 'encargado','tipo_actividad','lugares', 'direccion_inicio', 'direccion_fin','start_date', 'end_date', 'areas',
+                      'rooms',  'confirmation_status', 'privacy_status');
+
+
+
+-------------------------------------
+//linea: 293: Nombre de la reserva
+-------------------------------------
+function create_field_entry_name($disabled=FALSE)
+
+
+
+
+------------------------------------------------
+//linea: 706: campos perzonalizados
+Se agregan propiedades de los campos valores default etc
+------------------------------------------------
+function create_field_entry_custom_field($field, $key, $disabled=FALSE)
+
+
+
+----------------------------------------------------------------
+//liena: 844: crea la tabla de los usuarios del transporte
+----------------------------------------------------------------
+function Crear_Miembros()
+
+
+------------------------------------------------------------------------
+//linea: 1481: crear campos dependiendo del suaurio con datos falsos
+------------------------------------------------------------------------
+
+foreach ($edit_entry_field_order as $key)
+
+
+
+-------------------------------------------------------
+//linea: 1559: llamada la a funcion Crear_Miembros();
+//linea: 1834: funciones javascript
+-------------------------------------------------------
+
+
+
+***********************************
+Pagina: lang/lang.es
+***********************************
+idioma español
+
+
+
+
+***********************************
+Pagina: config.inc.php
+***********************************
+linea: 44 -> configuiracion BD
+
+linea: 75 -> Configuracion de nombre de tipos de reservas
+
+linea: 84 -> nombres de los label de los campos personales de la BD y campos obligatorios
+
+
+
+***********************************
+Pagina: view_entry.php
+***********************************
+Linea: 391: boton de impresion
+
+<?php
+$user = getUserName();
+if(authGetUserLevel($user) >1){
+?>
+
+<div id="imprimir">
+    <img src="images/imprimir.png" alt="imprmir" onclick="alert('hola')"/>
+</div>
+
+<?php  
+}
+
+?>
+
+
+Linea: 386 
+-> llamad a la funcion que crea la tabla
+echo create_details_body($row, TRUE, $keep_private, $room_disabled);
+
+
+
+***********************************
+Pagina: mrbs.css.php (estilo)
+***********************************
+
+#entry{ width: 700px; } //tabla consulta view_entry.php
+
+linea: 925 -> CSS UGIT
+
+
+
+
+
+
+***********************************
+Pagina: js/edit_entry.js.php
+***********************************
+linea: 1152 -> oculta la seleccion de vehiculo
+
+/* $('#div_areas').show();*/
+
+
+
+***********************************
+Pagina: functions.inc
+***********************************
+
+linea: 645 -> 
+function generate_simple_input($params)  Modificar INPUT
+
+ $html .= (isset($params['style'])) ? " style=\"" . $params['style'] . "\"" : "";
+
+linea: 1055->
+function generate_select($params)
+
+  $html .= (isset($params['onchange'])) ? " onchange=\"" . $params['onchange'] . "\"" : "";
+
+
+
+
+***********************************
+Pagina:functions_view.inc
+crea la tabla de consulta de reservas
+***********************************
+linea: 37 
+function create_details_body($data, $as_html=FALSE, $keep_private=FALSE, $room_disabled=FALSE)
+
+

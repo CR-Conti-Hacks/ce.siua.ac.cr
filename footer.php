@@ -1,0 +1,1 @@
+<iframe src="https://footerugit.siua.ac.cr/index.php?texto=gris_oscuro&detalle=celeste" class="pie_pagina"></iframe>

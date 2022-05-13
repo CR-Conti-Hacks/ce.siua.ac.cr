@@ -1,0 +1,17 @@
+{
+	"sProcessing":   "Procesando...",
+	"sLengthMenu":   "Mostrar: _MENU_ Vehículos",
+	"sZeroRecords":  "No se encontraron resultados",
+	"sInfo":         "Mostrando de _START_ a _END_ de un total de: _TOTAL_ vehículos",
+	"sInfoEmpty":    "Mostrando de 0 a 0 de un total de: 0 Vehículos",
+	"sInfoFiltered": "(Filtrando del _MAX_ total de Vehículos)",
+	"sInfoPostFix":  "",
+	"sSearch":       "Buscar:",
+	"sUrl":          "",
+	"oPaginate": {
+		"sFirst":    "Primero",
+		"sPrevious": "Anterior",
+		"sNext":     "Siguiente",
+		"sLast":     "Último"
+	}
+}
